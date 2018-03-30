@@ -16,7 +16,7 @@ body{ /* background for main.html page*/
   text-decoration: none;
 }
 
-nav {
+#main_menu {
   /*Affixes to the top left of the screen and fills the entire width*/
   position: fixed;
   left: 0px;
@@ -41,7 +41,7 @@ nav {
 
 }
 
-nav a {
+#main_menu a {
   flex: 1 1 auto;
   text-align: center;
   font-family: sans-serif;
@@ -49,7 +49,7 @@ nav a {
   transition: 0.1s;
 }
 
-nav a:hover {
+#main_menu a:hover {
   border-bottom: 3px solid white;
-  transition: 0.1s;
+  transition: 0.2s;
 }
