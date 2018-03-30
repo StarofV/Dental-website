@@ -1,0 +1,55 @@
+body{ /* background for main.html page*/ 
+    background-image: url(""); /* No image yet */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Get rid of link styling */
+*:link,*:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  /*Affixes to the top left of the screen and fills the entire width*/
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  /*Size and padding*/
+  height: 50px;
+  width: 65vw;
+  /*Padding both sides by 20% of the view width and setting the text to be vertically-aligned slightly above center*/
+  padding-left: 18%;
+  padding-right: 20%;
+  line-height: 50px;
+  /*Changing the border to be slighly more aesthetic*/
+  background-color: rgb(50, 54, 59);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+
+  /*Flexbox parent styles. Helps align the items*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+}
+
+nav a {
+  flex: 1 1 auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.3em;
+  transition: 0.1s;
+}
+
+nav a:hover {
+  border-bottom: 3px solid white;
+  transition: 0.1s;
+}
